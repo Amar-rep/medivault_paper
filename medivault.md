@@ -1,0 +1,9 @@
+The secure sharing of Electronic Medical Records between patients and hospitals is a significant challenge in healthcare . Traditional centralized solutions provide fast and reliable services but suffer from limited interoperability, security issues, and a lack of coordination among multiple hospitals.
+
+Blockchain based systems are working alternatives but both the public blockchain and permissioned blockchain solutions face several challenges related to scalability, privacy, and storage efficiency, particularly when handling large volumes of medical records .
+
+we propose Medivault, a hybrid blockchain-based platform for secure medical record management and sharing. The architecture combines a public blockchain network with private blockchain networks maintained by participating hospitals. The public blockchain acts as a coordination blockchain, while each hospital manages its own private chain for local operations. To overcome the inefficiency of storing large medical records directly on the blockchain Medivault utilizes the InterPlanetary File System (IPFS), a decentralized storage system. Medical records are stored in IPFS and metadata information are stored on the blockchain.
+
+Medivault utilize a patient centric access control model in which users retain complete ownership of their medical records. EMRs are organized into logical groups, and healthcare professionals must request access to the relevant group before viewing patient information. This allows for secure collaboration among hospitals .
+
+The public blockchain periodically stores snapshots of the private chains using a process called pinning,this mechanism protects against rollback attacks.
